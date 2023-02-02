@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# Zenkipay API SDK for PHP
 
 Definition of technical specification of the product; Zenkipay is a gateway
 cryptocurrency payment system that allows merchant's to receive payments on their
