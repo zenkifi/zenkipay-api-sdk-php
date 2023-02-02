@@ -1,4 +1,3 @@
-![example workflow](https://github.com/zenkifi/zenkipay-api-sdk-php/actions/workflows/maven.yml/badge.svg)
 # OpenAPIClient-php
 
 Definition of technical specification of the product; Zenkipay is a gateway
