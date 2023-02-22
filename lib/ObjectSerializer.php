@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace fi.zenki.zenkipay.api;
+namespace Zenkipay;
 
 use GuzzleHttp\Psr7\Utils;
-use fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\ModelInterface;
+use Zenkipay\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -469,7 +469,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\fi.zenki.zenkipay.api\Model\\' . $data->{$discriminator};
+                $subclass = '\Zenkipay\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

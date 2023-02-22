@@ -1,4 +1,4 @@
-# fi.zenki.zenkipay.api\WebhooksApi
+# Zenkipay\WebhooksApi
 
 All URIs are relative to https://api.zenki.fi, except if the operation defines another base path.
 
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\WebhooksApi(
+$apiInstance = new Zenkipay\Api\WebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -34,7 +34,7 @@ $svix_id = msg_2HYAP5mNDMxY0LurmzrPvGYJTdq; // string | Unique message identifie
 $svix_timestamp = 1668451615; // string | Date and time when the webhook is sent to the merchant, in milliseconds and UTC format.  The Unix epoch (or Unix time or POSIX time or Unix timestamp) is the number of seconds elapsed since January 1, 1970 (midnight UTC/GMT), not counting leap seconds (in ISO 8601: 1970-01-01T00: 00:00Z)
 $svix_signature = v1,HNHAxGk8b5lX2xC1uVUQy6AXgmPKrfNV4I+yENBC4Fk=; // string | Base64 encoded signature (delimited by spaces) on the sent content, the signature is generated from the following structure: signed_content = \"${svix_id}.${svix_timestamp}.${body}\".
 $content_type = application/json; // string | Content Type accepted.
-$webhook = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Webhook(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Webhook | A JSON structure will be sent that will have the information about the event to notify the merchant.
+$webhook = new \Zenkipay\Model\Webhook(); // \Zenkipay\Model\Webhook | A JSON structure will be sent that will have the information about the event to notify the merchant.
 
 try {
     $apiInstance->sendEvent($svix_id, $svix_timestamp, $svix_signature, $content_type, $webhook);
@@ -51,7 +51,7 @@ try {
 | **svix_timestamp** | **string**| Date and time when the webhook is sent to the merchant, in milliseconds and UTC format.  The Unix epoch (or Unix time or POSIX time or Unix timestamp) is the number of seconds elapsed since January 1, 1970 (midnight UTC/GMT), not counting leap seconds (in ISO 8601: 1970-01-01T00: 00:00Z) | |
 | **svix_signature** | **string**| Base64 encoded signature (delimited by spaces) on the sent content, the signature is generated from the following structure: signed_content &#x3D; \&quot;${svix_id}.${svix_timestamp}.${body}\&quot;. | |
 | **content_type** | **string**| Content Type accepted. | |
-| **webhook** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Webhook**](../Model/Webhook.md)| A JSON structure will be sent that will have the information about the event to notify the merchant. | [optional] |
+| **webhook** | [**\Zenkipay\Model\Webhook**](../Model/Webhook.md)| A JSON structure will be sent that will have the information about the event to notify the merchant. | [optional] |
 
 ### Return type
 

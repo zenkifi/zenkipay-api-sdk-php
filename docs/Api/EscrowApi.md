@@ -1,4 +1,4 @@
-# fi.zenki.zenkipay.api\EscrowApi
+# Zenkipay\EscrowApi
 
 All URIs are relative to https://api.zenki.fi, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://api.zenki.fi, except if the operation defines a
 ## `updateEscrow()`
 
 ```php
-updateEscrow($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order
+updateEscrow($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \Zenkipay\Model\Order
 ```
 
 Escrow update
@@ -25,10 +25,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\EscrowApi(
+$apiInstance = new Zenkipay\Api\EscrowApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order**](../Model/Order.md)
+[**\Zenkipay\Model\Order**](../Model/Order.md)
 
 ### Authorization
 

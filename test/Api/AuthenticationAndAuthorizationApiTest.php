@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace fi.zenki.zenkipay.api\Test\Api;
+namespace Zenkipay\Test\Api;
 
-use \fi.zenki.zenkipay.api\Configuration;
-use \fi.zenki.zenkipay.api\ApiException;
-use \fi.zenki.zenkipay.api\ObjectSerializer;
+use \Zenkipay\Configuration;
+use \Zenkipay\ApiException;
+use \Zenkipay\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * AuthenticationAndAuthorizationApiTest Class Doc Comment
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

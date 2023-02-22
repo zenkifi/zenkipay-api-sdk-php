@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace fi.zenki.zenkipay.api\Test\Model;
+namespace Zenkipay\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Base structure of the notification that the merchant will receive, this notification will handle different types of events for its processing. The content of the message will be in string format so that it can be interpreted according to the type of event received by the merchant from Zenkipay.
- * @package     fi.zenki.zenkipay.api
+ * @package     Zenkipay
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -9,9 +9,9 @@ Name | Type | Description | Notes
 **cart_id** | **string** | Unique identifier of the shopping cart that allows identifying the purchase of one or more products or services. In order to have correct traceability and adequate conversion metrics, it is required to send the OrderId field or the CardId Field. | [optional]
 **type** | **string** | Indicates the model for the product delivery or service delivery.  Possible values: * WITH_CARRIER    - If a courier is going to be used for the shipment and delivery of the product or service. * WITHOUT_CARRIER - If a courier is not going to be used for the shipment and delivery of the product or service. * MIXED           - If a courier is going to be used to send part of the products or services and another part is delivered without using a courier. |
 **country_code_iso2** | **string** | Unique country identifier, the definition of the ISO_3166-1 standard is used with 2 characters, see:https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 or https://www.iso.org/iso-3166-country-codes.html |
-**shopper** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Shopper**](Shopper.md) |  | [optional]
-**breakdown** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Breakdown**](Breakdown.md) |  |
-**items** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Item[]**](Item.md) | Set of products or services considered within the shopping cart. |
+**shopper** | [**\Zenkipay\Model\Shopper**](Shopper.md) |  | [optional]
+**breakdown** | [**\Zenkipay\Model\Breakdown**](Breakdown.md) |  |
+**items** | [**\Zenkipay\Model\Item[]**](Item.md) | Set of products or services considered within the shopping cart. |
 **metadata** | **array<string,string>** | Complementary information of the order that the merchant requires to send and inform Zenkipay. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

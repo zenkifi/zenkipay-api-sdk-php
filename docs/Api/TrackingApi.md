@@ -1,4 +1,4 @@
-# fi.zenki.zenkipay.api\TrackingApi
+# Zenkipay\TrackingApi
 
 All URIs are relative to https://api.zenki.fi, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.zenki.fi, except if the operation defines a
 ## `addEventTracking()`
 
 ```php
-addEventTracking($zenki_order_id, $zenki_track_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking_event): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\TrackingEventsInner[]
+addEventTracking($zenki_order_id, $zenki_track_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking_event): \Zenkipay\Model\TrackingEventsInner[]
 ```
 
 Shipping Status Update
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\TrackingApi(
+$apiInstance = new Zenkipay\Api\TrackingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -41,7 +41,7 @@ $content_type = application/json; // string | Content type accepted.
 $accept = application/json; // string | Accepted formats.
 $x_zenki_plugin_id = 4188918f7da1547d13e3; // string | Unique customer identifier used to establish connection with Zenkipay services.
 $accept_language = en; // string | Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html
-$add_tracking_event = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTrackingEvent(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTrackingEvent | A JSON structure will be sent that will have the required information to update the shipping status.
+$add_tracking_event = new \Zenkipay\Model\AddTrackingEvent(); // \Zenkipay\Model\AddTrackingEvent | A JSON structure will be sent that will have the required information to update the shipping status.
 
 try {
     $result = $apiInstance->addEventTracking($zenki_order_id, $zenki_track_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking_event);
@@ -61,11 +61,11 @@ try {
 | **accept** | **string**| Accepted formats. | |
 | **x_zenki_plugin_id** | **string**| Unique customer identifier used to establish connection with Zenkipay services. | [optional] |
 | **accept_language** | **string**| Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html | [optional] |
-| **add_tracking_event** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTrackingEvent**](../Model/AddTrackingEvent.md)| A JSON structure will be sent that will have the required information to update the shipping status. | [optional] |
+| **add_tracking_event** | [**\Zenkipay\Model\AddTrackingEvent**](../Model/AddTrackingEvent.md)| A JSON structure will be sent that will have the required information to update the shipping status. | [optional] |
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\TrackingEventsInner[]**](../Model/TrackingEventsInner.md)
+[**\Zenkipay\Model\TrackingEventsInner[]**](../Model/TrackingEventsInner.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ try {
 ## `registerTrackingOrders()`
 
 ```php
-registerTrackingOrders($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Tracking
+registerTrackingOrders($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking): \Zenkipay\Model\Tracking
 ```
 
 Registration number for tracking
@@ -98,10 +98,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\TrackingApi(
+$apiInstance = new Zenkipay\Api\TrackingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -112,7 +112,7 @@ $content_type = application/json; // string | Content type accepted.
 $accept = application/json; // string | Accepted formats.
 $x_zenki_plugin_id = 4188918f7da1547d13e3; // string | Unique customer identifier used to establish connection with Zenkipay services.
 $accept_language = en; // string | Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html
-$add_tracking = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTracking(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTracking | The registration of a tracking number associated with a shipment may be requested so that Zenkipay can track the delivery process, as reported by the courier.
+$add_tracking = new \Zenkipay\Model\AddTracking(); // \Zenkipay\Model\AddTracking | The registration of a tracking number associated with a shipment may be requested so that Zenkipay can track the delivery process, as reported by the courier.
 
 try {
     $result = $apiInstance->registerTrackingOrders($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $add_tracking);
@@ -131,11 +131,11 @@ try {
 | **accept** | **string**| Accepted formats. | |
 | **x_zenki_plugin_id** | **string**| Unique customer identifier used to establish connection with Zenkipay services. | [optional] |
 | **accept_language** | **string**| Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html | [optional] |
-| **add_tracking** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\AddTracking**](../Model/AddTracking.md)| The registration of a tracking number associated with a shipment may be requested so that Zenkipay can track the delivery process, as reported by the courier. | [optional] |
+| **add_tracking** | [**\Zenkipay\Model\AddTracking**](../Model/AddTracking.md)| The registration of a tracking number associated with a shipment may be requested so that Zenkipay can track the delivery process, as reported by the courier. | [optional] |
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Tracking**](../Model/Tracking.md)
+[**\Zenkipay\Model\Tracking**](../Model/Tracking.md)
 
 ### Authorization
 

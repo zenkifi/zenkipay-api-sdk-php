@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace fi.zenki.zenkipay.api\Test\Model;
+namespace Zenkipay\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description List of resources related to the order. The standards used to operate under the HATEOAS model are: https://stateless.group/hal_specification.html, https://datatracker.ietf.org/doc/html/draft-kelly-json-hal and https://www.rfc-editor.org/rfc/rfc8288  The currently supported resources to return within the _link property are: * refund - Returns the refund URI if it exists for the order.
- * @package     fi.zenki.zenkipay.api
+ * @package     Zenkipay
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

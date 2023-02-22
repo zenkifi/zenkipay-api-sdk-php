@@ -1,4 +1,4 @@
-# fi.zenki.zenkipay.api\RefundsApi
+# Zenkipay\RefundsApi
 
 All URIs are relative to https://api.zenki.fi, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://api.zenki.fi, except if the operation defines a
 ## `getRefundOrder()`
 
 ```php
-getRefundOrder($zenki_order_id, $zenki_refund_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Refund
+getRefundOrder($zenki_order_id, $zenki_refund_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \Zenkipay\Model\Refund
 ```
 
 Request refunds for an order
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\RefundsApi(
+$apiInstance = new Zenkipay\Api\RefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -63,7 +63,7 @@ try {
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Refund**](../Model/Refund.md)
+[**\Zenkipay\Model\Refund**](../Model/Refund.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ try {
 ## `registerRefundOrder()`
 
 ```php
-registerRefundOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $request_refund): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Refund
+registerRefundOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $request_refund): \Zenkipay\Model\Refund
 ```
 
 Register of refunds for an order
@@ -96,10 +96,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\RefundsApi(
+$apiInstance = new Zenkipay\Api\RefundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -110,7 +110,7 @@ $content_type = application/json; // string | Content type accepted.
 $accept = application/json; // string | Accepted formats.
 $x_zenki_plugin_id = 4188918f7da1547d13e3; // string | Unique customer identifier used to establish connection with Zenkipay services.
 $accept_language = en; // string | Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html
-$request_refund = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\RequestRefund(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\RequestRefund | A JSON structure will be sent, where one refund can be sent.
+$request_refund = new \Zenkipay\Model\RequestRefund(); // \Zenkipay\Model\RequestRefund | A JSON structure will be sent, where one refund can be sent.
 
 try {
     $result = $apiInstance->registerRefundOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $request_refund);
@@ -129,11 +129,11 @@ try {
 | **accept** | **string**| Accepted formats. | |
 | **x_zenki_plugin_id** | **string**| Unique customer identifier used to establish connection with Zenkipay services. | [optional] |
 | **accept_language** | **string**| Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html | [optional] |
-| **request_refund** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\RequestRefund**](../Model/RequestRefund.md)| A JSON structure will be sent, where one refund can be sent. | [optional] |
+| **request_refund** | [**\Zenkipay\Model\RequestRefund**](../Model/RequestRefund.md)| A JSON structure will be sent, where one refund can be sent. | [optional] |
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Refund**](../Model/Refund.md)
+[**\Zenkipay\Model\Refund**](../Model/Refund.md)
 
 ### Authorization
 

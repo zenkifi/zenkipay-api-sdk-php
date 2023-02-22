@@ -1,4 +1,4 @@
-# fi.zenki.zenkipay.api\OrdersApi
+# Zenkipay\OrdersApi
 
 All URIs are relative to https://api.zenki.fi, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://api.zenki.fi, except if the operation defines a
 ## `createOrder()`
 
 ```php
-createOrder($content_type, $accept, $x_zenki_plugin_id, $accept_language, $create_order): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order
+createOrder($content_type, $accept, $x_zenki_plugin_id, $accept_language, $create_order): \Zenkipay\Model\Order
 ```
 
 Payment order registration
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\OrdersApi(
+$apiInstance = new Zenkipay\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -40,7 +40,7 @@ $content_type = application/json; // string | Content type accepted.
 $accept = application/json; // string | Accepted formats.
 $x_zenki_plugin_id = 4188918f7da1547d13e3; // string | Unique customer identifier used to establish connection with Zenkipay services.
 $accept_language = en; // string | Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html
-$create_order = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\CreateOrder(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\CreateOrder | A JSON structure will be sent that will have the required information to create an order.
+$create_order = new \Zenkipay\Model\CreateOrder(); // \Zenkipay\Model\CreateOrder | A JSON structure will be sent that will have the required information to create an order.
 
 try {
     $result = $apiInstance->createOrder($content_type, $accept, $x_zenki_plugin_id, $accept_language, $create_order);
@@ -58,11 +58,11 @@ try {
 | **accept** | **string**| Accepted formats. | |
 | **x_zenki_plugin_id** | **string**| Unique customer identifier used to establish connection with Zenkipay services. | [optional] |
 | **accept_language** | **string**| Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html | [optional] |
-| **create_order** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\CreateOrder**](../Model/CreateOrder.md)| A JSON structure will be sent that will have the required information to create an order. | [optional] |
+| **create_order** | [**\Zenkipay\Model\CreateOrder**](../Model/CreateOrder.md)| A JSON structure will be sent that will have the required information to create an order. | [optional] |
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order**](../Model/Order.md)
+[**\Zenkipay\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ try {
 ## `getOrder()`
 
 ```php
-getOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order
+getOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language): \Zenkipay\Model\Order
 ```
 
 Order information
@@ -95,10 +95,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\OrdersApi(
+$apiInstance = new Zenkipay\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -130,7 +130,7 @@ try {
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order**](../Model/Order.md)
+[**\Zenkipay\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -148,7 +148,7 @@ try {
 ## `updateOrder()`
 
 ```php
-updateOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $update_order): \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order
+updateOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $update_order): \Zenkipay\Model\Order
 ```
 
 Order update for payment
@@ -163,10 +163,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure Bearer (ACCESS_TOKEN) authorization: JWTAuth
-$config = fi.zenki.zenkipay.api\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = Zenkipay\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new fi.zenki.zenkipay.api\Api\OrdersApi(
+$apiInstance = new Zenkipay\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ $content_type = application/json; // string | Content type accepted.
 $accept = application/json; // string | Accepted formats.
 $x_zenki_plugin_id = 4188918f7da1547d13e3; // string | Unique customer identifier used to establish connection with Zenkipay services.
 $accept_language = en; // string | Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html
-$update_order = new \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\UpdateOrder(); // \fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\UpdateOrder | A JSON structure will be sent that will have the required information to update an order.
+$update_order = new \Zenkipay\Model\UpdateOrder(); // \Zenkipay\Model\UpdateOrder | A JSON structure will be sent that will have the required information to update an order.
 
 try {
     $result = $apiInstance->updateOrder($zenki_order_id, $content_type, $accept, $x_zenki_plugin_id, $accept_language, $update_order);
@@ -196,11 +196,11 @@ try {
 | **accept** | **string**| Accepted formats. | |
 | **x_zenki_plugin_id** | **string**| Unique customer identifier used to establish connection with Zenkipay services. | [optional] |
 | **accept_language** | **string**| Indicates the language type code for which the content of the services response is returned according to the language reported.  The definition of the ISO_639 standard is used. See: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes or https://www.iso.org/iso-639-language-codes.html | [optional] |
-| **update_order** | [**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\UpdateOrder**](../Model/UpdateOrder.md)| A JSON structure will be sent that will have the required information to update an order. | [optional] |
+| **update_order** | [**\Zenkipay\Model\UpdateOrder**](../Model/UpdateOrder.md)| A JSON structure will be sent that will have the required information to update an order. | [optional] |
 
 ### Return type
 
-[**\fi.zenki.zenkipay.api\fi.zenki.zenkipay.api.model\Order**](../Model/Order.md)
+[**\Zenkipay\Model\Order**](../Model/Order.md)
 
 ### Authorization
 

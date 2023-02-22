@@ -1,5 +1,4 @@
 {
-    "version": "1.0.0-RELEASE",
     "description": "Definition of technical specification of the product; Zenkipay is a gateway cryptocurrency payment system that allows merchant's to receive payments on their e-commerce portals. Unlike other platforms, Zenkipay ensures customer satisfaction through its payment process. guarantee deposit (delivered product and expected quality) to settle payment to the merchant, thus avoiding the loss of client assets due to online scams.",
     "keywords": [
         "openapitools",
@@ -31,9 +30,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "fi.zenki.zenkipay.api\\" : "lib/" }
+        "psr-4": { "Zenkipay\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "fi.zenki.zenkipay.api\\Test\\" : "test/" }
+        "psr-4": { "Zenkipay\\Test\\" : "test/" }
     }
 }

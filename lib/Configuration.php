@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace fi.zenki.zenkipay.api;
+namespace Zenkipay;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 7.4
  *
  * @category Class
- * @package  fi.zenki.zenkipay.api
+ * @package  Zenkipay
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -430,11 +430,10 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (fi.zenki.zenkipay.api) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (Zenkipay) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    The version of the OpenAPI document: 1.0.0' . PHP_EOL;
-        $report .= '    SDK Package Version: 1.0.0-RELEASE' . PHP_EOL;
         $report .= '    Temp Folder Path: ' . self::getDefaultConfiguration()->getTempFolderPath() . PHP_EOL;
 
         return $report;
