@@ -12,7 +12,8 @@ For more information, please visit [https://www.zenki.fi/](https://www.zenki.fi/
 
 ## Installation & Usage
 
-### Requirements
+Build date: Thu Feb 23 15:57:04 UTC 2023 
+ ### Requirements
 
 PHP 7.4 and later.
 Should also work with PHP 8.0.
