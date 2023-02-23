@@ -12,7 +12,7 @@ For more information, please visit [https://www.zenki.fi/](https://www.zenki.fi/
 
 ## Installation & Usage
 
-Build date: Thu Feb 23 23:29:16 UTC 2023 
+Build date: Thu Feb 23 23:33:40 UTC 2023 
  ### Requirements
 
 PHP 7.4 and later.
