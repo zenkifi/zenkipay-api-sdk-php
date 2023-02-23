@@ -292,8 +292,8 @@ class TokenOAuth2 implements ModelInterface, ArrayAccess, \JsonSerializable
         if ($this->container['access_token'] === null) {
             $invalidProperties[] = "'access_token' can't be null";
         }
-        if ((mb_strlen($this->container['access_token']) > 1024)) {
-            $invalidProperties[] = "invalid value for 'access_token', the character length must be smaller than or equal to 1024.";
+        if ((mb_strlen($this->container['access_token']) > 2048)) {
+            $invalidProperties[] = "invalid value for 'access_token', the character length must be smaller than or equal to 2048.";
         }
 
         if ($this->container['token_type'] === null) {
@@ -339,8 +339,8 @@ class TokenOAuth2 implements ModelInterface, ArrayAccess, \JsonSerializable
         if (is_null($access_token)) {
             throw new \InvalidArgumentException('non-nullable access_token cannot be null');
         }
-        if ((mb_strlen($access_token) > 1024)) {
-            throw new \InvalidArgumentException('invalid length for $access_token when calling TokenOAuth2., must be smaller than or equal to 1024.');
+        if ((mb_strlen($access_token) > 2048)) {
+            throw new \InvalidArgumentException('invalid length for $access_token when calling TokenOAuth2., must be smaller than or equal to 2048.');
         }
 
         $this->container['access_token'] = $access_token;

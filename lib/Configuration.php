@@ -101,7 +101,7 @@ class Configuration
      *
      * @var string
      */
-    protected $userAgent = 'Zenkipay-API-Client/php/1.0.0/EN';
+    protected $userAgent = 'Zenkipay-API-Client/php/0.0.0/EN';
 
     /**
      * Debug switch (default set to false)
